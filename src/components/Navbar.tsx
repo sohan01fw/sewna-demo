@@ -2,8 +2,12 @@ import React from "react";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 md:px-12 py-4 backdrop-blur-sm bg-white border-b border-gray-100">
-      <h1 className="text-2xl font-extrabold tracking-tight text-black">
+    <nav
+      className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 md:px-12 py-4
+      before:content-[''] before:absolute before:inset-0 before:bg-linear-to-r before:from-white/10 before:to-lime-500/10 before:opacity-70 before:blur-2xl before:-z-10
+       transition-all duration-300"
+    >
+      <h1 className="text-2xl font-extrabold tracking-tight text-lime-600">
         sewna<span className="text-lime-500">.</span>
       </h1>
 

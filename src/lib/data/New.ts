@@ -36,12 +36,15 @@ export const New: DesignerCardType[] = [
       exp: "3 years",
       description: "Innovative designer with street-smart aesthetics.",
       workImages: [
-        "https://images.unsplash.com/photo-1530845645551-315fcd84dc8b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1530845645551-315fcd84dc8b?auto=format&fit=crop&w=801&q=80",
-        "https://images.unsplash.com/photo-1530845645551-315fcd84dc8b?auto=format&fit=crop&w=802&q=80",
-        "https://images.unsplash.com/photo-1530845645551-315fcd84dc8b?auto=format&fit=crop&w=803&q=80",
-        "https://images.unsplash.com/photo-1530845645551-315fcd84dc8b?auto=format&fit=crop&w=804&q=80",
-        "https://images.unsplash.com/photo-1530845645551-315fcd84dc8b?auto=format&fit=crop&w=805&q=80",
+        "https://www.joinsewna.com/static/media/img13_165W.638cd11dd3df3be8af6f.webp",
+
+        "https://www.joinsewna.com/static/media/img13_165W.638cd11dd3df3be8af6f.webp",
+
+        "https://www.joinsewna.com/static/media/img13_165W.638cd11dd3df3be8af6f.webp",
+
+        "https://www.joinsewna.com/static/media/img13_165W.638cd11dd3df3be8af6f.webp",
+        "https://www.joinsewna.com/static/media/img13_165W.638cd11dd3df3be8af6f.webp",
+        "https://www.joinsewna.com/static/media/img13_165W.638cd11dd3df3be8af6f.webp",
       ],
       verifications: {
         idVerified: true,

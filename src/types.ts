@@ -30,6 +30,7 @@ export interface DesignerCardType {
 
 // Now this type matches your `export const designerData = { Trending, Premium, ... }`
 export interface DesignerData {
+  Explore: DesignerCardType[];
   Trending: DesignerCardType[];
   Premium: DesignerCardType[];
   TopSelling: DesignerCardType[];

@@ -1,16 +1,26 @@
 import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router";
+import FloatingImages from "./FloatingImages";
+import Navbar from "./Navbar";
 
 type HoverState = "left" | "right" | null;
 
 const RIGHT_IMAGES = [
-  "https://images.unsplash.com/photo-1606577924000-8aa3b1f8bfc8?auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1593032457861-7f9e92d229cc?auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1581349487871-6c1c6217dc3c?auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1583270354364-1eea50c0e77a?auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1596464716126-9e2b3efb1c23?auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=60",
+  "https://www.joinsewna.com/static/media/img1_100W.c4c12c89b9425dcfb847.webp",
+  "https://www.joinsewna.com/static/media/img2_121W.63d7d6cec1cd6b7fa55f.webp",
+  "https://www.joinsewna.com/static/media/img3_121.489c23a73323650e3be0.webp",
+  "https://www.joinsewna.com/static/media/img4_98W.88d8badb166f0b3d70c6.webp",
+  "https://www.joinsewna.com/static/media/img5_100W.cb18445e0f95f73f476a.webp",
+  "https://www.joinsewna.com/static/media/img6_84W.6ea8425d58235c860bc1.webp",
+  "https://www.joinsewna.com/static/media/img7_99W.466b4847c74a1100d8cf.webp",
+  "https://www.joinsewna.com/static/media/img8_153W.ab1cdba242106da0a7f5.webp",
+  "https://www.joinsewna.com/static/media/img9_151W.dab4600f286264b47ee8.webp",
+  "https://www.joinsewna.com/static/media/img10_97W.6e566d084283af644fce.webp",
+  "https://www.joinsewna.com/static/media/img11_105W.a956a1983f8b70c91cd6.webp",
+  "https://www.joinsewna.com/static/media/img12_97W.c70c44b464503f0a7b11.jpg",
+  "https://www.joinsewna.com/static/media/img13_165W.638cd11dd3df3be8af6f.webp",
+  "https://www.joinsewna.com/static/media/img14_132W.2e342e56e3702e86c9a6.webp",
 ];
 
 const HeroSplit: React.FC = () => {
@@ -26,7 +36,8 @@ const HeroSplit: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-screen flex mt-20 select-none overflow-hidden">
+    <section className="relative w-screen h-screen flex select-none overflow-hidden">
+      <Navbar />
       {/* Left side - Designer */}
       <motion.div
         onMouseEnter={() => setHovered("left")}
@@ -42,7 +53,8 @@ const HeroSplit: React.FC = () => {
         {/* Background image with parallax */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.img
-            src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1400&q=80"
+            // src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1400&q=80"
+            src="https://www.joinsewna.com/static/media/designer.80f7a2565c25f4bb9918.jpeg"
             alt="Designer at work"
             className="w-full h-full object-cover"
             animate={{
@@ -86,9 +98,11 @@ const HeroSplit: React.FC = () => {
                 transition={{ duration: 0.35 }}
                 className="mt-6"
               >
-                <button className="px-6 py-3 rounded-lg bg-lime-500 text-white font-semibold shadow-lg hover:brightness-105 transition">
-                  Join as Designer
-                </button>
+                <Link to="/onboarding" className="hover:cursor-pointer">
+                  <button className="px-6 py-3 rounded-lg bg-lime-500 text-white font-semibold shadow-lg hover:brightness-105 transition hover:cursor-pointer">
+                    Join as Designer
+                  </button>
+                </Link>
               </motion.div>
             )}
             {hovered === null && (
@@ -120,30 +134,8 @@ const HeroSplit: React.FC = () => {
         style={{ minWidth: 0 }}
       >
         {/* Right gallery with soft blur and stagger */}
-        <div className="absolute inset-0 p-6 md:p-12 flex items-center justify-center pointer-events-none">
-          <div className="w-full max-w-3xl grid grid-cols-3 md:grid-cols-4 gap-3 opacity-90">
-            {RIGHT_IMAGES.map((src, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, scale: 0.98 }}
-                animate={{
-                  opacity: hovered === "right" ? 1 : 0.9,
-                  scale: hovered === "right" ? 1.03 : 1,
-                }}
-                transition={{ delay: 0.08 * idx, duration: 0.5 }}
-                className="rounded-md overflow-hidden shadow-sm bg-gray-100"
-                style={{ minHeight: 90 }}
-              >
-                <img
-                  src={src}
-                  alt={`fashion-${idx}`}
-                  className="w-full h-full object-cover"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
 
+        <FloatingImages images={RIGHT_IMAGES} />
         {/* Right text block */}
         <div className="relative z-10 max-w-lg text-center px-8 md:px-16">
           <motion.h2
@@ -203,7 +195,7 @@ const HeroSplit: React.FC = () => {
           initial={{ scaleY: 1 }}
           animate={{ scaleY: [1, 1.15, 1] }}
           transition={{ duration: 2.6, repeat: Infinity, ease: "easeInOut" }}
-          className="h-3/4 w-[2px] rounded-full bg-gradient-to-b from-lime-400 to-lime-600 blur-[0.6px] opacity-90"
+          className="h-3/4 w-0.5 rounded-full bg-linear-to-b from-lime-400 to-lime-600 blur-[0.6px] opacity-90"
         />
       </div>
     </section>

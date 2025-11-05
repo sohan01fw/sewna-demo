@@ -10,9 +10,12 @@ export const Trending: DesignerCardType[] = [
       description:
         "Ava Couture is known for her modern silhouettes infused with timeless luxury. Her work focuses on minimal fashion with sustainable materials.",
       workImages: [
-        "https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1520975918313-60e55e7a8b68?auto=format&fit=crop&w=800&q=80",
+        "https://www.joinsewna.com/static/media/img9_151W.dab4600f286264b47ee8.webp",
+        "https://www.joinsewna.com/static/media/img9_151W.dab4600f286264b47ee8.webp",
+        "https://www.joinsewna.com/static/media/img9_151W.dab4600f286264b47ee8.webp",
+        "https://www.joinsewna.com/static/media/img9_151W.dab4600f286264b47ee8.webp",
+        "https://www.joinsewna.com/static/media/img9_151W.dab4600f286264b47ee8.webp",
+        "https://www.joinsewna.com/static/media/img9_151W.dab4600f286264b47ee8.webp",
       ],
       verifications: {
         idVerified: true,
@@ -74,8 +77,12 @@ export const Trending: DesignerCardType[] = [
       description:
         "Sofia focuses on handwoven materials and intricate detailing that celebrates local craftsmanship.",
       workImages: [
-        "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
+        "https://www.joinsewna.com/static/media/img5_100W.cb18445e0f95f73f476a.webp",
+        "https://www.joinsewna.com/static/media/img5_100W.cb18445e0f95f73f476a.webp",
+        "https://www.joinsewna.com/static/media/img5_100W.cb18445e0f95f73f476a.webp",
+        "https://www.joinsewna.com/static/media/img5_100W.cb18445e0f95f73f476a.webp",
+        "https://www.joinsewna.com/static/media/img5_100W.cb18445e0f95f73f476a.webp",
+        "https://www.joinsewna.com/static/media/img5_100W.cb18445e0f95f73f476a.webp",
       ],
       verifications: {
         idVerified: true,
@@ -130,7 +137,7 @@ export const Trending: DesignerCardType[] = [
       description:
         "Mila specializes in experimental cuts and futuristic aesthetics inspired by architecture.",
       workImages: [
-        "https://images.unsplash.com/photo-1520975918313-60e55e7a8b68?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
       ],
       verifications: {

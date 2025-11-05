@@ -36,12 +36,12 @@ export const TopSelling: DesignerCardType[] = [
       exp: "5 years",
       description: "Minimalist fashion designer with sleek aesthetics.",
       workImages: [
-        "https://images.unsplash.com/photo-1542060748-10c28b62716d?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1542060748-10c28b62716d?auto=format&fit=crop&w=801&q=80",
-        "https://images.unsplash.com/photo-1542060748-10c28b62716d?auto=format&fit=crop&w=802&q=80",
-        "https://images.unsplash.com/photo-1542060748-10c28b62716d?auto=format&fit=crop&w=803&q=80",
-        "https://images.unsplash.com/photo-1542060748-10c28b62716d?auto=format&fit=crop&w=804&q=80",
-        "https://images.unsplash.com/photo-1542060748-10c28b62716d?auto=format&fit=crop&w=805&q=80",
+        "https://www.joinsewna.com/static/media/img12_97W.c70c44b464503f0a7b11.jpg",
+        "https://www.joinsewna.com/static/media/img12_97W.c70c44b464503f0a7b11.jpg",
+        "https://www.joinsewna.com/static/media/img12_97W.c70c44b464503f0a7b11.jpg",
+        "https://www.joinsewna.com/static/media/img12_97W.c70c44b464503f0a7b11.jpg",
+        "https://www.joinsewna.com/static/media/img12_97W.c70c44b464503f0a7b11.jpg",
+        "https://www.joinsewna.com/static/media/img12_97W.c70c44b464503f0a7b11.jpg",
       ],
       verifications: {
         idVerified: true,
